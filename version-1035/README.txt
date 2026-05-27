@@ -1,0 +1,1 @@
+打开 index.html 即可浏览站点。detail 页面播放器默认使用本地 demo-*.mp4 线路。

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>全站搜索</title>
+  <meta name="description" content="全站影片搜索与筛选。">
+  <meta name="keywords" content="最新国产电影,国产电影,最新影片,高清电影,视频在线播放,电影合集,影片更新">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="stylesheet" href="./assets/site.css">
+  <script src="./assets/movies-index.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./index.html">
+      <span class="brand-mark">最新</span>
+      <span class="brand-text">最新国产电影</span>
+    </a>
+    <button class="menu-toggle" aria-label="展开菜单" data-menu-toggle>☰</button>
+    <nav class="site-nav" data-site-nav>
+      <a class="nav-link " href="./index.html">首页</a>
+      <a class="nav-link " href="./categories.html">分类总览</a>
+      <a class="nav-link " href="./ranking.html">排行榜</a>
+      <a class="nav-link active" href="./search.html">全站搜索</a>
+      <a class="nav-link " href="./about.html">关于本站</a>
+      <a class="nav-link " href="./policy.html">免责声明</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container page-top">
+  <span class="hero-kicker">全站搜索</span>
+  <h1>查找任意影片</h1>
+  <p class="search-note">支持标题、类型、地区、标签、简介的模糊搜索，覆盖全部 2000 条影片。</p>
+</div>
+<div class="container section-block">
+  <div class="search-shell" id="globalSearchApp">
+    <div class="search-form">
+      <input id="globalSearchInput" type="search" placeholder="输入关键词，例如：悬疑、爱情、香港、2025…">
+      <select id="globalSearchType">
+        <option value="all">全部类型</option>
+        <option value="电影">电影</option>
+        <option value="剧集">剧集</option>
+        <option value="电视剧">电视剧</option>
+        <option value="动画电影">动画电影</option>
+        <option value="纪录片">纪录片</option>
+      </select>
+      <button class="btn btn-primary" type="button" data-jump-to="#globalSearchResults">查看结果</button>
+    </div>
+    <p class="search-note" id="globalSearchNote">准备搜索全部影片。</p>
+    <div class="search-grid" id="globalSearchResults"></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">最新国产电影</div>
+      <p>整理最新国产电影内容，覆盖近期上线影片、热门题材和精选片单，页面更新清晰。</p>
+    </div>
+    <div>
+      <h4>快捷入口</h4>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">全站搜索</a>
+    </div>
+    <div>
+      <h4>推荐栏目</h4>
+      <a href="./category-suspense.html">悬疑惊悚</a>
+      <a href="./category-romance.html">爱情剧情</a>
+      <a href="./category-action.html">动作冒险</a>
+      <a href="./category-comedy.html">喜剧轻松</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">© 2026 最新国产电影</div>
+</footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script src="./assets/site.js"></script>
+</body>
+</html>

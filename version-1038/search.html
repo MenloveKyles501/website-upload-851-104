@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索中心 - 经典亚洲电影</title>
+  <meta name="description" content="全站影片搜索与筛选中心。">
+  <meta name="keywords" content="经典亚洲电影,亚洲电影,经典影片,电影合集,影片片单,精选内容,持续更新">
+  <meta name="theme-color" content="#07111f">
+  <link rel="stylesheet" href="assets/site.css">
+  
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="返回首页">
+        <div class="brand-mark">亚</div>
+        <div class="brand-text">
+          <strong>经典亚洲电影</strong>
+          <span>经典影片合集 · 持续更新</span>
+        </div>
+      </a>
+      <button class="nav-toggle mini-btn" type="button" data-nav-toggle>菜单</button>
+      <nav class="nav" data-nav>
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+        <a href="ranking.html">排行榜</a>
+        <a href="search.html">搜索中心</a>
+        <a href="#latest">最新片单</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+<main class="container">
+  <section class="section panel" data-filter-root>
+    <div class="section-head">
+      <div>
+        <h1 style="margin:0;font-size:clamp(1.8rem,3vw,2.8rem);">搜索中心</h1>
+        <p>支持关键词、类型、年份和标签筛选，结果来自 2000 条完整影片数据。</p>
+      </div>
+      <div class="badge">共 <b data-search-count>0</b> 条结果</div>
+    </div>
+    <div class="toolbar" style="margin-bottom:14px;">
+      <input data-search-input type="search" placeholder="输入关键词后实时筛选……">
+      <select data-filter-type>
+        <option value="">全部类型</option>
+        <option value="电影">电影</option>
+        <option value="剧集">剧集</option>
+        <option value="电视剧">电视剧</option>
+        <option value="动画">动画</option>
+      </select>
+      <select data-filter-year>
+        <option value="">全部年份</option>
+        <option value="2029">2029</option><option value="2028">2028</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option>
+      </select>
+    </div>
+    <div class="notice" style="margin-bottom:14px;">提示：在这里输入关键词、地区、标签或年份，就会在全部影片中实时搜索。</div>
+    <div class="grid-4" data-search-results></div>
+  </section>
+</main>
+<script src="assets/movies.js"></script>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>经典亚洲电影 · 纯静态站点</div>
+      <div>影片条目：2000 · 分类页面：12 · 详情页：2000</div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
